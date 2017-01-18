@@ -8,6 +8,9 @@ The scrollbar is designed for [hyperterm-atom-dark](https://github.com/mdo/hyper
 ![screenshot](https://dev.moso.io/hyper/hyper-dark-scrollbar/screenshot.png)
 
 ### Changelog
+**1.1.0**
+- (henrikdahl)[https://github.com/henrikdahl] magic - see [e6124e7](https://github.com/moso/hyper-dark-scrollbar/commit/e6124e7640291940acf46883d4022bef900ada60) for changes.
+
 **1.0.0**
 - Initial release.
 
