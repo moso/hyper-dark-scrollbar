@@ -16,6 +16,9 @@
     "scroll",
     "scrollbar"
   ],
+  "dependencies": {
+    "color": "^1.0.3"
+  },
   "author": "Morten Sørensen <morten@moso.io>",
   "license": "MIT"
 }
