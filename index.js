@@ -4,7 +4,7 @@ const Color = require('color');
 exports.decorateConfig = (config) => {
     const backColor = Color(config.backgroundColor)
     const colors = {
-        light: backColor.lighten(0.5).string(),
+        light: backColor.lightness(26).string(),
         dark: backColor.darken(0.18).string()
     }
 
