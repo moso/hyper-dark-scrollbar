@@ -1,11 +1,14 @@
 {
   "name": "hyper-dark-scrollbar",
-  "version": "1.1.0",
-  "description": "Pretty scrollbar for hyper",
+  "version": "1.2.0",
+  "description": "Dark scrollbar for hyper",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moso/hyper-dark-scrollbar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moso/hyper-dark-scrollbar/issues"
   },
   "keywords": [
     "hyper",
@@ -16,9 +19,13 @@
     "scroll",
     "scrollbar"
   ],
-  "dependencies": {
-    "color": "^1.0.3"
+  "author": {
+    "name": "Morten Sørensen",
+    "email": "morten@moso.io",
+    "url": "https://moso.io"
   },
-  "author": "Morten Sørensen <morten@moso.io>",
+  "dependencies": {
+    "color": "^2.0.0"
+  },
   "license": "MIT"
 }
