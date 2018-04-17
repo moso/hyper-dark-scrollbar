@@ -10,6 +10,9 @@ The scrollbar is originally designed for [hyperterm-atom-dark](https://github.co
 In Hyper 2.x there's a small known bug, that I actually don't know where to address. With this plugin, the scrollbar-track (the line where the scrollbar runs inside) is always visible. I'm trying to figure out if it's something to do with the upgrade to Xterm, or if I have to create something in React myself. But for now, please enjoy a more sleek scrolling experience.
 
 ### Changelog
+**1.2.1**
+- Removed support for Hyper 1.4.8
+
 **1.2.0**
 - Fixed lacking support for xterm api in Hyper 2.x
 - Upgraded dependencies
