@@ -1,13 +1,19 @@
 # hyper-dark-scrollbar
-Pretty scrollbar for [hyper](https://github.com/zeit/hyper).
+Dark scrollbar for [Hyper](https://github.com/zeit/hyper) - a plugin that stylizes the chunky Windows-ish scrollbar into a more sleek scrollbar.
 
-A plugin that stylizes the chunky Windows-ish scrollbar into a more sleek scrollbar.
-
-The scrollbar is designed for [hyperterm-atom-dark](https://github.com/mdo/hyperterm-atom-dark), however, it also looks great on the standard theme, and should look fine on dark themes. Please do create a fork if you want your own custom, personal style, or to fit your theme better.
+The scrollbar is originally designed for [hyperterm-atom-dark](https://github.com/mdo/hyperterm-atom-dark), however, it also looks great on the standard theme, and should look fine on dark themes, as it utilises the theme background color. You're ~welcome~ encouraged to fork this project and modify it if you need to tinker with the colors to fit your theme better, or create a PR if I missed something that needs fixing.
 
 ![screenshot](https://dev.moso.io/hyper/hyper-dark-scrollbar/screenshot.png)
 
+### Note
+
+In Hyper 2.x there's a small known bug, that I actually don't know where to address. With this plugin, the scrollbar-track (the line where the scrollbar runs inside) is always visible. I'm trying to figure out if it's something to do with the upgrade to Xterm, or if I have to create something in React myself. But for now, please enjoy a more sleek scrolling experience.
+
 ### Changelog
+**1.2.0**
+- Fixed lacking support for xterm api in Hyper 2.x
+- Upgraded dependencies
+
 **1.1.0**
 - [henrikdahl](https://github.com/henrikdahl) magic - see [e6124e7](https://github.com/moso/hyper-dark-scrollbar/commit/e6124e7640291940acf46883d4022bef900ada60) for changes.
 
@@ -16,24 +22,30 @@ The scrollbar is designed for [hyperterm-atom-dark](https://github.com/mdo/hyper
 
 ### Install
 
+**Hyper store**:
+```
+hyper i hyper-dark-scrollbar
+```
+
 **Manually**:
 
-1. Open hyper's preferences with `Ctrl+,` (or manually at `~/.hyper.js`) with your editor.
+1. Open Hyper's preferences with `Ctrl+,` (or manually at `~/.hyper.js`) with your editor.
 2. Update your list of plugins to include hyper-dark-scrollbar, like so:
 
         plugins: [
             'hyper-dark-scrollbar'
         ],
 
-3. Reload (`Ctrl+Shift+R`) or restart hyper and voila!
+3. Reload (`Ctrl+Shift+R`) or restart Hyper and voila!
 
-**hpm**:
+**hpm (1.4.8)**:
 
 1. Install using `hpm i hyper-dark-scrollbar`
-2. Reload (`Ctrl+Shift+R`) or restart hyper and voila!
+2. Reload (`Ctrl+Shift+R`) or restart Hyper and voila!
 
 ### Related
 
+- [hyper-snazzy-scrollbar](https://github.com/Stanzilla/hyper-dark-scrollbar) - a fork for the [hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy) theme
 - [hyper-arc-dark-controls](https://github.com/moso/hyper-arc-dark-controls)
 
 ### License
