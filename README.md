@@ -10,11 +10,15 @@ The scrollbar is originally designed for [hyperterm-atom-dark](https://github.co
 In Hyper 2.x there's a small known bug, that I actually don't know where to address. With this plugin, the scrollbar-track (the line where the scrollbar runs inside) is always visible. I'm trying to figure out if it's something to do with the upgrade to Xterm, or if I have to create something in React myself. But for now, please enjoy a more sleek scrolling experience.
 
 ### Changelog
+**1.2.2**
+- Added attention note about the order of plugins for this plugin to work correctly
+- Removed docs about `hpm`
+
 **1.2.1**
-- Removed support for Hyper 1.4.8
+- Removed support for Hyper v1.4.8
 
 **1.2.0**
-- Fixed lacking support for xterm api in Hyper 2.x
+- Fixed lacking support for xterm api in Hyper v2.x
 - Upgraded dependencies
 
 **1.1.0**
@@ -41,10 +45,28 @@ hyper i hyper-dark-scrollbar
 
 3. Reload (`Ctrl+Shift+R`) or restart Hyper and voila!
 
-**hpm (1.4.8)**:
+### Attention
 
-1. Install using `hpm i hyper-dark-scrollbar`
-2. Reload (`Ctrl+Shift+R`) or restart Hyper and voila!
+If you have added a theme to Hyper, you will need to make sure `hyper-dark-scrollbar` is loaded **_after_** the theme; preferably last. Otherwise the utilisation of the `color`-package won't work, and you'll end up with whatever colors are defined in your `~/.hyper.js`.
+
+Check your `~/.hyper.js` and make sure it look like this:
+
+```javascript
+module.exports = {
+    config: {
+
+        // ...
+
+        plugins: [
+            'theme',
+            // other plugins
+            'hyper-dark-scrollbar'
+        ],
+
+        // ...
+    }
+}
+```
 
 ### Related
 
