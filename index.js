@@ -34,6 +34,9 @@ exports.decorateConfig = (config) => {
                 background-color: ${colors.light};
                 -webkit-box-shadow: none;
             }
+            .xterm .xterm-viewport {
+                overflow-y: auto;
+            }
         `
     })
 };
