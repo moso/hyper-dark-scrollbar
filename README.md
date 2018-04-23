@@ -10,6 +10,9 @@ The scrollbar is originally designed for [hyperterm-atom-dark](https://github.co
 In Hyper 2.x there's a small known bug, that I actually don't know where to address. With this plugin, the scrollbar-track (the line where the scrollbar runs inside) is always visible. I'm trying to figure out if it's something to do with the upgrade to Xterm, or if I have to create something in React myself. But for now, please enjoy a more sleek scrolling experience.
 
 ### Changelog
+**1.2.3**
+- Fixed scrollbar always visible ([4922649](https://github.com/moso/hyper-dark-scrollbar/commit/4922649b3505980524d1d856651f330a98ac02ac)) - thanks [@krve](https://github.com/krve)!
+
 **1.2.2**
 - Added attention note about the order of plugins for this plugin to work correctly
 - Removed docs about `hpm`
