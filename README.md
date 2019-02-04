@@ -6,6 +6,9 @@ The scrollbar is originally designed for [hyperterm-atom-dark](https://github.co
 ![screenshot](https://dev.moso.io/hyper/hyper-dark-scrollbar/screenshot.png)
 
 ### Changelog
+**1.2.4**
+- Added hover-effect on the scrollbar
+
 **1.2.3**
 - Fixed scrollbar always visible ([4922649](https://github.com/moso/hyper-dark-scrollbar/commit/4922649b3505980524d1d856651f330a98ac02ac)) - thanks [@krve](https://github.com/krve)!
 

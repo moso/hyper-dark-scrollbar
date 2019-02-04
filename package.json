@@ -1,6 +1,6 @@
 {
   "name": "hyper-dark-scrollbar",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Dark scrollbar for Hyper",
   "main": "index.js",
   "repository": {
