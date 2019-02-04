@@ -74,6 +74,7 @@ module.exports = {
 
 - [hyper-snazzy-scrollbar](https://github.com/Stanzilla/hyper-dark-scrollbar) - a fork for the [hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy) theme
 - [hyper-arc-dark-controls](https://github.com/moso/hyper-arc-dark-controls)
+- [hyper-pocillo-controls](https://github.com/moso/hyper-pocillo-controls)
 
 ### License
 
