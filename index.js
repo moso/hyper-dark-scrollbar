@@ -5,7 +5,8 @@ exports.decorateConfig = (config) => {
     const backColor = Color(config.backgroundColor)
     const colors = {
         light: backColor.lightness(27).string(),
-        dark: backColor.darken(0.18).string()
+        dark: backColor.darken(0.18).string(),
+        hover: backColor.lightness(33).string()
     }
 
     return Object.assign({}, config, {
@@ -32,6 +33,10 @@ exports.decorateConfig = (config) => {
             }
             .xterm-viewport::-webkit-scrollbar-thumb {
                 background-color: ${colors.light};
+                -webkit-box-shadow: none;
+            }
+            .xterm-viewport::-webkit-scrollbar-thumb:hover {
+                background-color: ${colors.hover};
                 -webkit-box-shadow: none;
             }
             .xterm .xterm-viewport {
